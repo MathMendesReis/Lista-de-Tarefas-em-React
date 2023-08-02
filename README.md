@@ -1,7 +1,7 @@
 
 # [To do list](https://lista-de-tarefas-em-react.vercel.app/)
 
-![Logo do Projeto](../vite-project/public//vite.svg)
+![Logo do Projeto](vite-project/public/vite.svg)
 
 Descrição curta do projeto e o que ele faz.
 
