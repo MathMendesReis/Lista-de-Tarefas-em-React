@@ -1,24 +1,24 @@
-import React, { ReactNode } from 'react'
-import { DefaultTheme, ThemeProvider } from 'styled-components'
+import React, { ReactNode } from 'react';
+import { DefaultTheme, ThemeProvider } from 'styled-components';
 
 const round = (num: number) =>
   num
     .toFixed(7)
     .replace(/(\.[0-9]+?)0+$/, '$1')
-    .replace(/\.0$/, '')
-const rem = (px: number) => `${round(px / 16)}rem`
+    .replace(/\.0$/, '');
+const rem = (px: number) => `${round(px / 16)}rem`;
 
 export const theme: DefaultTheme = {
   colors: {
     white: '#FFFFFF',
-    black: '#0C0D0F',
+    black: '#0D0D0D',
     red: '#E03131',
     orange: '#E8590C',
     yellow: '#FCC419',
     green: '#23DB42',
     teal: '#89DD13',
-    cyan: '#3BC9DB',
-    blue: '#25BEFF',
+    blue: '#4EA8DE',
+    darkBlue: '#1E6F9F',
     indigo: '#4263Eb',
     purple: '#7E5CEF',
     pink: '#FE5895',
@@ -30,7 +30,7 @@ export const theme: DefaultTheme = {
     gray600: '#64666B',
     gray700: '#424449',
     gray800: '#1D1E21',
-    gray900: '#141518',
+    gray900: '#1A1A1A',
     primary: '#F83600',
     secondary: '#FE8C00',
   },
@@ -51,12 +51,12 @@ export const theme: DefaultTheme = {
     '4xl': rem(40),
     '5xl': rem(64),
   },
-}
+};
 
 interface ThemeProps {
   children: ReactNode
 }
 
 export function Theme({ children }: ThemeProps) {
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>
+  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 }

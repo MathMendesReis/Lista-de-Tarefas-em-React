@@ -1,4 +1,4 @@
-import 'styled-components'
+import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
@@ -12,8 +12,8 @@ declare module 'styled-components' {
       yellow: string
       green: string
       teal: string
-      cyan: string
       blue: string
+      darkBlue: string
       indigo: string
       purple: string
       pink: string
