@@ -40,11 +40,16 @@ padding: 0 1rem;
   font-weight: 900;
   letter-spacing: 1px;
   transition: background-color ease 1s;
-  &:hover{
+  &:hover:not(:disabled){
     background-color: ${({theme})=>theme.colors.blue};
   }
-  &:active{
+  &:active:not(:disabled){
     transform: translateY(2px);
   }
+}
+
+>button:disabled{
+  opacity: 0.8;
+  cursor: not-allowed;
 }
 `;
