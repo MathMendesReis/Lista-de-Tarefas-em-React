@@ -1,5 +1,5 @@
 //ts:ignore
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Container } from './styled';
 import { Header } from './componetesMain/header';
 import FormCreatedTask from './componetesMain/CreatedTask';
