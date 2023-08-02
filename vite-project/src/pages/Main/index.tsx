@@ -1,18 +1,14 @@
-import { Container } from "./styled"
-import logo from '../../../public/vite.svg'
+//ts:ignore
+import React from 'react';
+import { Container } from './styled';
+import { Header } from './componetesMain/header';
 
 function Main() {
-    return (
+  return (
     <Container>
-     <header>
-      <img src={logo} alt="" />
-     </header>
-     <main></main>
-     <footer>
-      <span>visite meu <a href="https://matheusmendes.vercel.app/">portifolio</a></span>
-     </footer>
+      <Header/>
     </Container>
-    )
+  );
 }
 
-export default Main
+export default Main;
