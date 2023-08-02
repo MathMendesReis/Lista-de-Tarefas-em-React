@@ -1,9 +1,8 @@
-//ts:ignore
 import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react';
 import { Container } from './styled';
 
 interface Props {
-  newTask: (id:string, task: string, isConcluid:boolean) => void;
+  newTask: (task: string, isConcluid:boolean) => void;
 }
 
 function FormCreatedTask({newTask}:Props) {
@@ -11,7 +10,9 @@ function FormCreatedTask({newTask}:Props) {
 
   function handleNewTask(event:FormEvent) {
     event.preventDefault();
-    newTask('1',task,false);
+    if (task !== ' ') {
+      newTask(task,false);
+    }
     setTask('');
   }
   function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
@@ -28,15 +29,15 @@ function FormCreatedTask({newTask}:Props) {
       <input
       type="text"
       title='insira uma tarefa'
-      required
+      required={true}
       onChange={handleInputChange}
-      defaultValue={task}
+      value={task}
       onInvalid={handleInvalid}
       placeholder='insira uma tarefa'
-      onSubmit={handleNewTask}
       />
       <button
       onClick={handleNewTask}
+      disabled={task === ''? true : false}
       type='submit'
       >criar
       </button>

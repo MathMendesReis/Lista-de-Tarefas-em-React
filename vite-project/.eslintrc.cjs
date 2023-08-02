@@ -26,10 +26,10 @@ module.exports = {
     },
     plugins: ['@typescript-eslint', 'react'],
     rules: {
-    'react/jsx-uses-react': 'error',
+      'react/react-in-jsx-scope': 'off',
 
     // Informar quando o React não está sendo usado em arquivos JSX
-    'react/react-in-jsx-scope': 'error',
+    // 'react/react-in-jsx-scope': 'error',
       // Padronizar aspas simples
       quotes: ['error', 'single'],
   

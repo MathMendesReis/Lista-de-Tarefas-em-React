@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React,{ ReactNode } from 'react';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 
 const round = (num: number) =>
