@@ -1,5 +1,5 @@
 //ts:ignore
-import React, { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react';
+import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react';
 import { Container } from './styled';
 
 interface Props {
