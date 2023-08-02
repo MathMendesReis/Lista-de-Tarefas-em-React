@@ -12,7 +12,6 @@ export const Container = styled.header`
   img{
     width: 1.375rem;
     height: 2.25rem;
-    flex-shrink: 0;
   }
 
   span{
