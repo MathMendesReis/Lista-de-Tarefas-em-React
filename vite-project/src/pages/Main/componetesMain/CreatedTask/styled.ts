@@ -11,10 +11,8 @@ align-items: center;
 gap: 0.5rem;
 flex: 1 0 0;
 height: 3.375rem;
-position: absolute;
-top: 17.5%;
-/* flex-wrap: wrap; */
 padding: 0 1rem;
+margin-top: -3.9rem;
 >input{
   height: 3.375rem;
   width: clamp(16rem, 39.75rem, 39.75rem);
