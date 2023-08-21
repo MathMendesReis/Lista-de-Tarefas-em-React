@@ -25,10 +25,15 @@ export function CardsTasks({ content, deleteTasks, updateTasks }: Props) {
         checked={isConcluid}
         onChange={handleCheckboxChange}
         onClick={updateTasks}
+        title='marcar tarefa como concluida?'
       />
     </form>
-      <p>{content}</p>
-      <button onClick={deleteTasks}><DeleteIcon/></button>
+      <p
+      title={`Tarefa: ${content}`}
+      >{content}</p>
+      <button 
+      title='Apagar tarefa'
+      onClick={deleteTasks}><DeleteIcon/></button>
     </Container>
   );
 }

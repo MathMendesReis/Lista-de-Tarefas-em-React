@@ -54,12 +54,17 @@ function Main() {
       newTask={insertNewTask}
       />
       <section>
-        <span>
+        <span
+        title={`Você tem ${data.length} criadas.`}
+
+        >
           Tarefas criadas:
           {' '}
           <strong>{data.length}</strong>
         </span>
-        <span>
+        <span
+        title={`Você tem ${tasksConcluidas.length} concluidas.`}
+        >
           Tarefas concluidas:
           {' '}
           <strong>{tasksConcluidas.length} de {data.length}</strong>
