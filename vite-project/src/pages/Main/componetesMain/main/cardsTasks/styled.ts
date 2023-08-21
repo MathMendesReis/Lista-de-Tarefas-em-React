@@ -41,15 +41,14 @@ export const Container = styled.section<Prosp>`
     outline: none;
     -webkit-appearance: none; 
     border: 2px solid ${({theme})=>theme.colors.blue}; 
-    background-color: ${({theme})=>theme.colors.black};
-    border-radius: 50%;
+    background-color: ${({theme})=>theme.colors.gray700};
+    border-radius: 999px;
 
     &:checked {
       background-color: ${({theme})=>theme.colors.purple};
       border: 2px solid ${({theme})=>theme.colors.purple}; 
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cstyle%3E.polyline { stroke: %23FFFFFF; stroke-width: 25 }%3C/style%3E%3Crect width='256' height='256' fill='none'/%3E%3Cpolyline class='polyline' points='40 144 96 200 224 72' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'/%3E%3C/svg%3E");
-    }
-    
+      } 
     }
   }
 `;
