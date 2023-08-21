@@ -12,6 +12,7 @@ export const theme: DefaultTheme = {
   colors: {
     white: '#FFFFFF',
     black: '#0D0D0D',
+    blackLigth:'#1A1A1A',
     red: '#E03131',
     orange: '#E8590C',
     yellow: '#FCC419',
@@ -28,12 +29,13 @@ export const theme: DefaultTheme = {
     gray400: '#CED4DA',
     gray500: '#A4ACB4',
     gray600: '#64666B',
-    gray700: '#424449',
+    gray700: '#262626',
     gray800: '#1D1E21',
     gray900: '#1A1A1A',
     primary: '#F83600',
     secondary: '#FE8C00',
   },
+  
   fontFamily: {
     heading: ['IBM Plex Sans', 'sans-serif'].join(','),
     sans: ['Open Sans', 'Arial', 'Helvetica', 'sans-serif'].join(','),
