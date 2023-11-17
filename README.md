@@ -3,7 +3,6 @@
 
 ![Logo do Projeto](vite-project/public/vite.svg)
 
-Descrição curta do projeto e o que ele faz.
 
 ## Índice
 
