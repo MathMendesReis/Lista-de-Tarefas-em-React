@@ -2,16 +2,16 @@ import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react';
 import { Container } from './styled';
 
 interface Props {
-  newTask: (task: string, isConcluid:boolean) => void;
+  newTask: (task: string, isConcluid: boolean) => void;
 }
 
-function FormCreatedTask({newTask}:Props) {
+function FormCreatedTask({ newTask }: Props) {
   const [task, setTask] = useState<string>('');
 
-  function handleNewTask(event:FormEvent) {
+  function handleNewTask(event: FormEvent) {
     event.preventDefault();
     if (task !== ' ') {
-      newTask(task,false);
+      newTask(task, false);
     }
     setTask('');
   }
@@ -24,21 +24,21 @@ function FormCreatedTask({newTask}:Props) {
 
   return (
     <Container
-    action='submit'
+      action='submit'
     >
       <input
-      type="text"
-      title='insira uma tarefa'
-      required={true}
-      onChange={handleInputChange}
-      value={task}
-      onInvalid={handleInvalid}
-      placeholder='insira uma tarefa'
+        type="text"
+        title='insira uma tarefa'
+        required={true}
+        onChange={handleInputChange}
+        value={task}
+        onInvalid={handleInvalid}
+        placeholder='insira uma tarefa'
       />
       <button
-      onClick={handleNewTask}
-      disabled={task === ''? true : false}
-      type='submit'
+        onClick={handleNewTask}
+        disabled={task === '' ? true : false}
+        type='submit'
       >criar
       </button>
     </Container>
