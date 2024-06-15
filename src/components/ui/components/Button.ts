@@ -1,10 +1,12 @@
+'use client'
 import styled from "styled-components";
 
-interface SButtonProps {}
+interface SButtonProps {
+  size?:"small"
+}
 const Button = styled.button<SButtonProps>`
   display: inline-flex;
   font-size: 1.4em;
-  padding: 0.25em 1.6em;
   border: 2px solid transparent;
   border-radius: 8px;
   background-color: ${props => props.theme.colors.purpleDark};
@@ -18,7 +20,12 @@ const Button = styled.button<SButtonProps>`
   letter-spacing: 0%;
   align-items: center;
   justify-content: center;
-  min-height: 5.2rem;
+  min-width: 52px;
+  max-width: 110px;
+  width: 100%;
+  height: 52px;
+  padding: 24px 16px;
+
   gap:8px;
   opacity: 0.8;
   &:hover:not(:disabled){
@@ -33,4 +40,9 @@ const Button = styled.button<SButtonProps>`
 `;
 
 export const DefaultButton = styled(Button)`
+`;
+export const GhostButton = styled(Button)`
+background-color: transparent;
+width: 24px;
+height: 24px;
 `;

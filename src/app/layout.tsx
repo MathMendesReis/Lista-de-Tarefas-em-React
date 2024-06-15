@@ -1,6 +1,6 @@
-import { Theme } from "@/components/style/Theme";
-import { GlobalStyle } from "@/components/style/global";
-import StyledComponentsRegistry from "@/lib/registry";
+import { Header } from "@/components/features/header/style/Header";
+import { DefaultProvider } from "@/components/providers/default-provider";
+import { Logo } from "@/components/ui/icons";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -18,14 +18,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <StyledComponentsRegistry>
-          <Theme>
-            <GlobalStyle/>
-            {children}
-          </Theme>
-        </StyledComponentsRegistry>
-      </body>
+      <link rel="icon" href="/icon?<generated>" type="image/png" sizes="32x32" />
+
+      <DefaultProvider>
+        <body>
+           <Header>
+              <Logo/>
+            </Header>
+          {children}
+        </body>
+      </DefaultProvider>
     </html>
   );
 }

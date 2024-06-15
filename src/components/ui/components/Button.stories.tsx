@@ -2,7 +2,7 @@ import { PlusCircle } from "@phosphor-icons/react";
 import { withActions } from '@storybook/addon-actions/decorator';
 import { Meta, StoryObj } from "@storybook/react/*";
 
-import * as S from "./Button";
+import * as S from "./components/Button";
 
 export default {
     title: 'Ui/Buttons',
